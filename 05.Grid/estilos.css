@@ -1,0 +1,41 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.grid-4 {
+    display: grid;
+    /*grid-template-columns: 25% 25% 25% 25%;*/
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* También podemos utilizar la unidad de medida fr llamada fracción */
+}
+
+@media screen and (min-width:300px) {
+    section{
+        background-color: plum;
+        border: 2px solid purple;
+        grid-column: span 2;
+    }
+}
+
+@media screen and (max-width:300px) {
+    section{
+        background-color: rgb(38, 169, 245);
+        border: 2px solid rgb(17, 0, 128);
+        grid-column: span 4;
+    }
+}
+
+aside{
+    background-color: aquamarine;
+}
+
+#principal{
+    background-color: lightskyblue;
+    /*
+    El espacio que ocupa es desde la primera
+    linea del grid hasta la cuarta linea del 
+    grid
+    */
+    grid-column: 1 / 4;
+}
