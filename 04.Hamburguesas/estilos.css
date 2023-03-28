@@ -1,4 +1,4 @@
-* {
+body, header, main {
     padding: 0;
     margin: 0;
 }
@@ -35,6 +35,8 @@ header {
 .pan {
     background-color: burlywood;
 
+    margin: 1em;
+
     padding-top: 2em;
     padding-bottom: 2em;
 
@@ -62,4 +64,13 @@ header {
 .mayonesa{
     background-color: antiquewhite;
     height: 0.5em;
+}
+
+#mamba-negra{
+    background-color: black !important;
+    color: white;
+}
+
+#mamba-negra .queso{
+    background-color: blue;
 }
